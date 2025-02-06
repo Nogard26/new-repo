@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Al rededor de los Estados Unidos" />
+    <meta name="keywords" content="Ciudades, Valles, Lagos" />
+    <meta name="author" content="David Segovia" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Arount the US</title>
+  </head>
+  <body>
+    <div class="pages">
+      <header class="header">
+        <img
+          src="./images/Vector.png"
+          alt="Imagen de Around"
+          class="header__vector"
+        />
+        <img
+          src="./images/Line.png"
+          alt="Imagen de Linea"
+          class="header__line"
+        />
+      </header>
+      <main class="main">
+        <section class="profile">
+          <img
+            src="./images/Avatar.png"
+            alt="Imagen del avatar"
+            class="profile__avatar"
+          />
+          <div class="profile__info">
+            <div class="profile__info-item">
+              <h1 id="profile__info-name" class="profile__info-name">
+                Jacques Cousteau
+              </h1>
+              <a href="#"
+                ><img
+                  src="./images/Edit Button.png"
+                  alt="Imagen de un botton de editar"
+                  class="profile__info-button"
+              /></a>
+            </div>
+            <h2 class="profile__info-function">Explorador</h2>
+          </div>
+          <button class="profile__button">+</button>
+        </section>
+        <!-- Modal para editar los datos -->
+        <div class="modal" id="editModal">
+          <div class="modal__content">
+            <span class="modal__close" id="closeButton">&times;</span>
+            <h2 class="modal__content-title">Editar Perfil</h2>
+            <input
+              class="modal__content-input"
+              type="text"
+              id="nameInput"
+              placeholder="Nombre"
+            />
+            <input
+              class="modal__content-input"
+              type="text"
+              id="functionInput"
+              placeholder="Acerca de mi"
+            />
+            <div class="modal__actions">
+              <button id="saveButton">Guardar</button>
+            </div>
+          </div>
+        </div>
+        <section id="elements" class="elements"></section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&#169; 2024 Around The U.S.</p>
+      </footer>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
